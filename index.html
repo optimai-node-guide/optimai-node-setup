@@ -281,12 +281,30 @@
       .cta-btn-wrap { padding: 0 8px; }
     }
     @media (max-width:600px) {
-      .section { padding:70px 16px; }
+      .section { padding:60px 16px; }
       .setup-tabs { width:100%; flex-wrap:wrap; }
       .tab-btn { flex:1; min-width:100px; justify-content:center; padding:10px 8px; font-size:0.8rem; }
       .features-grid { grid-template-columns:1fr; }
       .footer-inner { flex-direction:column; align-items:flex-start; }
+      .hero h1 { font-size: clamp(1.9rem, 8vw, 2.6rem); }
+      .section-title { font-size: clamp(1.6rem, 6vw, 2.2rem); }
+      .hero-sub { font-size: 0.97rem; }
+      .section-sub { font-size: 0.95rem; }
+      .hero-stats { gap: 20px; }
+      .hero-stat strong { font-size: 1.25rem; }
+      .what-card h3 { font-size: 0.95rem; }
+      .step-card h3 { font-size: 1rem; }
+      .btn { font-size: 0.92rem; padding: 13px 20px; }
+      .cta-inner { padding: 36px 16px; }
+      .cta-inner h2 { font-size: clamp(1.4rem, 6vw, 1.9rem); }
+      .setup-step-info h4 { font-size: 0.9rem; }
+      .setup-step-info p { font-size: 0.82rem; }
     }
+    /* BACK TO TOP */
+    .back-top { position:fixed; bottom:90px; right:18px; z-index:199; width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,var(--blue),var(--purple)); border:none; cursor:pointer; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 20px rgba(59,130,246,0.45); opacity:0; transform:translateY(12px); transition:opacity .3s,transform .3s; pointer-events:none; }
+    .back-top.show { opacity:1; transform:translateY(0); pointer-events:auto; }
+    .back-top svg { width:20px; height:20px; stroke:#fff; fill:none; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; }
+    @media (min-width:901px) { .back-top { bottom:24px; } }
   </style>
 </head>
 <body>
@@ -647,7 +665,18 @@
   <a href="https://node.optimai.network/register?ref=40AC28ED" target="_blank" rel="noopener">⚡ Create Free Account — Start Now</a>
 </div>
 
+<!-- BACK TO TOP -->
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+  <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
+</button>
+
 <script>
+  /* Back to Top */
+  const bt = document.getElementById('backTop');
+  window.addEventListener('scroll', () => {
+    bt.classList.toggle('show', window.scrollY > 400);
+  }, {passive:true});
+
   /* NAV scroll */
   window.addEventListener('scroll', () => {
     document.getElementById('navbar').style.background = window.scrollY > 60 ? 'rgba(5,8,16,0.96)' : 'rgba(5,8,16,0.80)';
@@ -694,13 +723,18 @@
     }
   }
 
-  /* Sticky CTA */
+  /* Sticky CTA — hide when CTA section OR footer is visible */
   const sc = document.getElementById('stickyCta');
-  window.addEventListener('scroll', () => {
-    const f = document.querySelector('footer');
-    if (!f || !sc) return;
-    sc.style.display = f.getBoundingClientRect().top < window.innerHeight + 80 ? 'none' : 'block';
-  }, {passive:true});
+  function updateSticky() {
+    if (!sc) return;
+    const footer = document.querySelector('footer');
+    const ctaSection = document.getElementById('join');
+    const footerVisible = footer && footer.getBoundingClientRect().top < window.innerHeight + 40;
+    const ctaVisible = ctaSection && ctaSection.getBoundingClientRect().top < window.innerHeight - 60;
+    sc.style.display = (footerVisible || ctaVisible) ? 'none' : 'block';
+  }
+  window.addEventListener('scroll', updateSticky, {passive:true});
+  updateSticky();
 </script>
 
 </body>
