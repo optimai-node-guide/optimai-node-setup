@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Setup OptimAI Network Node on Android, iPhone & PC (2026 Guide)</title>
+  <meta name="description" content="Complete beginner guide to setup OptimAI Network node on Android, iOS, Telegram and PC. Free to join. No technical skills needed. Step-by-step tutorial 2026." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="OptimAI Network Guide" />
+  <meta name="last-modified" content="2026-05-13" />
+  <link rel="canonical" href="https://yourusername.github.io/optimai-node-setup/" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23050810'/><text y='.9em' font-size='80'>🤖</text></svg>" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourusername.github.io/optimai-node-setup/" />
+  <meta property="og:title" content="How to Setup OptimAI Network Node (2026 Beginner Guide)" />
+  <meta property="og:description" content="Step-by-step guide to setup OptimAI node on Android, iOS, Telegram & PC. Free to join. 5 minutes setup." />
+  <meta property="og:image" content="https://node.optimai.network/og-image.jpg" />
+  <meta property="og:site_name" content="OptimAI Network Guide" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How to Setup OptimAI Network Node (2026 Beginner Guide)" />
+  <meta name="twitter:description" content="Step-by-step guide to setup OptimAI node on Android, iOS, Telegram & PC. Free to join." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="manifest" href="manifest.json" />
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to Setup OptimAI Network Node","description":"Complete beginner guide to setup OptimAI Network node on Android, iOS, Telegram and PC.","totalTime":"PT5M","estimatedCost":{"@type":"MonetaryAmount","currency":"USD","value":"0"},"step":[{"@type":"HowToStep","position":1,"name":"Create Free Account","text":"Register a free account at OptimAI Network using your email.","url":"https://node.optimai.network/register?ref=40AC28ED"},{"@type":"HowToStep","position":2,"name":"Verify Your Email","text":"Check your inbox and click the verification link."},{"@type":"HowToStep","position":3,"name":"Download OptimAI Edge Node App","text":"Search OptimAI Edge Node on Google Play or App Store."},{"@type":"HowToStep","position":4,"name":"Login and Start Node","text":"Open the app, login, and tap Start Node."},{"@type":"HowToStep","position":5,"name":"Enable Background Running","text":"Allow the app to run in the background."}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is OptimAI Network free to join?","acceptedAnswer":{"@type":"Answer","text":"Yes. Joining OptimAI Network is completely free. No upfront costs or fees."}},{"@type":"Question","name":"Can I use mobile only without a PC?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. OptimAI has a dedicated mobile app for Android and iOS. No desktop required."}},{"@type":"Question","name":"Can I run OptimAI node on Telegram?","acceptedAnswer":{"@type":"Answer","text":"Yes. OptimAI Lite Node runs inside Telegram via a bot. Same account syncs rewards."}},{"@type":"Question","name":"Do I need a powerful PC?","acceptedAnswer":{"@type":"Answer","text":"No. OptimAI Node runs on ordinary hardware including older computers and budget phones."}},{"@type":"Question","name":"How long does setup take?","acceptedAnswer":{"@type":"Answer","text":"The complete setup takes approximately 3 to 5 minutes."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"How to Setup OptimAI Network Node on Android, iPhone & PC (2026 Guide)","description":"Complete beginner guide to setup OptimAI Network node on mobile, Telegram and desktop.","url":"https://yourusername.github.io/optimai-node-setup/","dateModified":"2026-05-13","inLanguage":"en"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"OptimAI Network Guide","url":"https://yourusername.github.io/optimai-node-setup/","description":"Independent beginner guide for setting up OptimAI Network node.","sameAs":["https://node.optimai.network/register?ref=40AC28ED"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yourusername.github.io/optimai-node-setup/"},{"@type":"ListItem","position":2,"name":"Setup Guide","item":"https://yourusername.github.io/optimai-node-setup/#setup"},{"@type":"ListItem","position":3,"name":"FAQ","item":"https://yourusername.github.io/optimai-node-setup/#faq"}]}</script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #050810; --bg2: #080d1a; --surface: rgba(255,255,255,0.04);
+      --border: rgba(99,179,255,0.15); --blue: #3b82f6; --blue-l: #60a5fa;
+      --cyan: #22d3ee; --purple: #a855f7; --purple-l: #c084fc;
+      --white: #f0f6ff; --muted: #8898bb;
+      --glow-b: 0 0 40px rgba(59,130,246,0.35);
+      --radius: 16px; --tr: 0.3s ease;
+      --fh: 'Syne', sans-serif;
+      --fb: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      background:
+        radial-gradient(ellipse 80% 60% at 15% 10%, rgba(59,130,246,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 85% 80%, rgba(168,85,247,0.12) 0%, transparent 60%),
+        #050810;
+      background-attachment: fixed;
+      color: var(--white); font-family: var(--fb); font-size: 16px;
+      line-height: 1.65; overflow-x: hidden; -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    ul { list-style: none; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: #2a3a5e; border-radius: 99px; }
+
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 18px 48px; background: rgba(5,8,16,0.80); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); border-bottom: 1px solid var(--border); transition: background var(--tr); }
+    .nav-logo { font-family: var(--fh); font-size: 1.25rem; font-weight: 800; color: var(--cyan); letter-spacing: -0.02em; }
+    .nav-logo span { color: var(--purple-l); }
+    .nav-links { display: flex; gap: 32px; align-items: center; }
+    .nav-links a { font-size: 0.875rem; font-weight: 500; color: var(--muted); transition: color var(--tr); }
+    .nav-links a:hover { color: var(--white); }
+    .nav-cta { padding: 9px 22px; background: linear-gradient(135deg, var(--blue), var(--purple)); border-radius: 8px; font-size: 0.875rem; font-weight: 600; color: #fff !important; transition: opacity var(--tr), box-shadow var(--tr); }
+    .nav-cta:hover { opacity: 0.88; box-shadow: var(--glow-b); }
+    .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+    .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: all 0.3s; }
+    .mobile-menu { display: none; position: fixed; top: 70px; left: 0; right: 0; background: rgba(5,8,16,0.97); backdrop-filter: blur(18px); border-bottom: 1px solid var(--border); padding: 24px 24px 32px; z-index: 99; flex-direction: column; gap: 20px; }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { font-size: 1rem; font-weight: 500; color: var(--muted); padding: 8px 0; }
+    .mobile-menu a:hover { color: var(--white); }
+
+    /* UTILS */
+    .section { padding: 100px 24px; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .section-tag { display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.25); border-radius: 99px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue-l); margin-bottom: 20px; }
+    .section-tag .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--cyan); animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(1.4)} }
+    .section-title { font-family: var(--fh); font-size: clamp(2rem,5vw,3rem); font-weight: 800; line-height: 1.15; letter-spacing: -0.03em; margin-bottom: 16px; }
+    .gradient-text { color: var(--cyan); }
+    .section-sub { font-size: 1.05rem; color: var(--muted); max-width: 580px; line-height: 1.7; }
+    .text-center { text-align: center; }
+    .text-center .section-sub { margin: 0 auto; }
+    .glass { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); backdrop-filter: blur(12px); transition: border-color var(--tr), box-shadow var(--tr), transform var(--tr); }
+    .glass:hover { border-color: rgba(99,179,255,0.35); box-shadow: var(--glow-b); transform: translateY(-4px); }
+    .btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 30px; border-radius: 10px; font-family: var(--fb); font-size: 1rem; font-weight: 600; cursor: pointer; border: none; transition: all var(--tr); text-align: center; white-space: nowrap; }
+    .btn-primary { background: linear-gradient(135deg, var(--blue), var(--purple)); color: #fff; box-shadow: 0 4px 24px rgba(59,130,246,0.3); }
+    .btn-primary:hover { box-shadow: 0 6px 40px rgba(59,130,246,0.55); transform: translateY(-2px); }
+    .btn-outline { background: transparent; color: var(--white); border: 1px solid var(--border); }
+    .btn-outline:hover { border-color: var(--blue-l); color: var(--blue-l); background: rgba(59,130,246,0.07); }
+    .badge { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; }
+    .badge-green { background: rgba(34,197,94,0.12); color: #4ade80; border: 1px solid rgba(34,197,94,0.2); }
+    .badge-blue  { background: rgba(59,130,246,0.12); color: var(--blue-l); border: 1px solid rgba(59,130,246,0.2); }
+    .badge-purple{ background: rgba(168,85,247,0.12); color: var(--purple-l); border: 1px solid rgba(168,85,247,0.2); }
+    .divider { height: 1px; background: linear-gradient(90deg,transparent,var(--border),transparent); }
+
+    /* ═══════════════════════════════════════
+       HERO
+    ═══════════════════════════════════════ */
+    .hero { min-height: 100vh; display: flex; align-items: center; padding: 120px 24px 80px; overflow: hidden; }
+    .hero-inner { max-width: 1100px; margin: 0 auto; width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+
+    /* Hero text — CSS animation, always visible */
+    .hero-badge { display: inline-flex; align-items: center; gap: 8px; padding: 7px 16px; background: rgba(34,211,238,0.08); border: 1px solid rgba(34,211,238,0.22); border-radius: 99px; font-size: 0.8rem; font-weight: 600; color: var(--cyan); margin-bottom: 24px; letter-spacing: 0.06em; animation: fadeUp .6s ease .1s both; }
+    .live-dot { width: 7px; height: 7px; background: #4ade80; border-radius: 50%; box-shadow: 0 0 8px #4ade80; animation: blink 1.4s infinite; display: inline-block; }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
+    .hero h1 { font-family: var(--fh); font-size: clamp(2.4rem,6vw,4rem); font-weight: 800; line-height: 1.1; letter-spacing: -0.04em; margin-bottom: 20px; animation: fadeUp .6s ease .2s both; }
+    .hero-sub { font-size: 1.1rem; color: var(--muted); line-height: 1.75; margin-bottom: 36px; max-width: 460px; animation: fadeUp .6s ease .3s both; }
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 40px; animation: fadeUp .6s ease .4s both; }
+    .hero-stats { display: flex; gap: 32px; flex-wrap: wrap; animation: fadeUp .6s ease .5s both; }
+    .hero-stat label { font-size: 0.75rem; color: var(--muted); display: block; margin-bottom: 2px; letter-spacing: 0.05em; }
+    .hero-stat strong { font-family: var(--fh); font-size: 1.5rem; font-weight: 700; }
+    @keyframes fadeUp { from{opacity:0;transform:translateY(22px)} to{opacity:1;transform:translateY(0)} }
+
+    /* ═══════════════════════════════════════
+       ORB — FIXED: margin-based centering
+       overflow:hidden on container prevents
+       rings from covering hero text on mobile
+    ═══════════════════════════════════════ */
+    .hero-visual { display: flex; justify-content: center; align-items: center; animation: fadeUp .6s ease .3s both; }
+    .network-orb {
+      width: 380px; height: 380px;
+      position: relative; flex-shrink: 0;
+      overflow: hidden; /* CRITICAL: prevents rings from overflowing */
+    }
+
+    /* Core — top/left 50% + negative margin (no inset, no translate conflict) */
+    .orb-core {
+      position: absolute; top: 50%; left: 50%;
+      width: 110px; height: 110px;
+      margin-top: -55px; margin-left: -55px;
+      background: radial-gradient(circle, var(--blue) 0%, var(--purple) 100%);
+      border-radius: 50%;
+      box-shadow: 0 0 60px rgba(59,130,246,0.7), 0 0 120px rgba(168,85,247,0.4);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2.5rem; z-index: 3;
+      animation: floatCore 6s ease-in-out infinite;
+    }
+    @keyframes floatCore { 0%,100%{transform:translateY(0) scale(1)} 50%{transform:translateY(-10px) scale(1.03)} }
+
+    /* Rings — top/left 50% + negative margin, pure rotate animation */
+    .orb-ring {
+      position: absolute; top: 50%; left: 50%;
+      border-radius: 50%; border-style: solid; border-color: transparent;
+    }
+    .ring1 { width:200px; height:200px; margin-top:-100px; margin-left:-100px; border-width:1px; border-top-color:rgba(59,130,246,0.6); border-right-color:rgba(59,130,246,0.3); animation:cwSpin 8s linear infinite; }
+    .ring2 { width:290px; height:290px; margin-top:-145px; margin-left:-145px; border-width:1px; border-bottom-color:rgba(168,85,247,0.6); border-left-color:rgba(168,85,247,0.3); animation:ccwSpin 12s linear infinite; }
+    .ring3 { width:370px; height:370px; margin-top:-185px; margin-left:-185px; border-width:1px; border-top-color:rgba(34,211,238,0.4); border-right-color:rgba(34,211,238,0.2); animation:cwSpin 18s linear infinite; }
+    @keyframes cwSpin  { from{transform:rotate(0deg)}   to{transform:rotate(360deg)} }
+    @keyframes ccwSpin { from{transform:rotate(0deg)}   to{transform:rotate(-360deg)} }
+
+    /* Orbiting dots */
+    .orb-dot { position: absolute; width: 10px; height: 10px; border-radius: 50%; top: 50%; left: 50%; margin-top:-5px; margin-left:-5px; transform-origin: 0 0; }
+    .orb-dot:nth-child(4) { background:var(--cyan); box-shadow:0 0 10px var(--cyan); animation:orbit1 8s linear infinite; }
+    .orb-dot:nth-child(5) { background:var(--purple-l); box-shadow:0 0 10px var(--purple-l); animation:orbit2 12s linear infinite; }
+    .orb-dot:nth-child(6) { background:#60a5fa; box-shadow:0 0 10px #60a5fa; animation:orbit3 18s linear infinite; }
+    @keyframes orbit1 { from{transform:rotate(0deg)   translateX(95px)} to{transform:rotate(360deg)  translateX(95px)} }
+    @keyframes orbit2 { from{transform:rotate(120deg) translateX(138px)} to{transform:rotate(480deg) translateX(138px)} }
+    @keyframes orbit3 { from{transform:rotate(240deg) translateX(178px)} to{transform:rotate(-120deg) translateX(178px)} }
+
+    /* Always visible (no opacity trap) */
+    .reveal { opacity: 1; }
+
+    /* WHAT IS */
+    .what-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap:16px; margin-top:48px; }
+    .what-card { padding:28px 24px; border-radius:var(--radius); }
+    .what-icon { font-size:2rem; margin-bottom:14px; display:block; }
+    .what-card h3 { font-family:var(--fh); font-size:1rem; font-weight:700; margin-bottom:8px; }
+    .what-card p { font-size:0.875rem; color:var(--muted); line-height:1.6; }
+
+    /* HOW */
+    .steps-flow { display:grid; grid-template-columns:1fr auto 1fr auto 1fr; align-items:center; margin-top:52px; }
+    .step-card { padding:36px 28px; border-radius:var(--radius); text-align:center; }
+    .step-num { width:52px; height:52px; border-radius:50%; background:linear-gradient(135deg,var(--blue),var(--purple)); display:flex; align-items:center; justify-content:center; font-family:var(--fh); font-size:1.1rem; font-weight:800; margin:0 auto 16px; box-shadow:0 0 24px rgba(59,130,246,0.4); }
+    .step-card h3 { font-family:var(--fh); font-size:1.1rem; font-weight:700; margin-bottom:10px; }
+    .step-card p { font-size:0.875rem; color:var(--muted); line-height:1.6; }
+    .step-arrow { display:flex; align-items:center; justify-content:center; padding:0 8px; flex-shrink:0; opacity:0.35; }
+    .step-arrow svg { width:22px; height:22px; stroke:var(--blue-l); fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+
+    /* SETUP TABS */
+    .setup-tabs { display:flex; gap:12px; margin-bottom:32px; background:rgba(255,255,255,0.03); border:1px solid var(--border); border-radius:12px; padding:6px; width:fit-content; }
+    .tab-btn { padding:10px 24px; border-radius:8px; border:none; background:transparent; color:var(--muted); font-family:var(--fb); font-size:0.9rem; font-weight:600; cursor:pointer; display:flex; align-items:center; gap:8px; transition:all var(--tr); }
+    .tab-btn.active { background:linear-gradient(135deg,var(--blue),var(--purple)); color:#fff; box-shadow:0 2px 16px rgba(59,130,246,0.3); }
+    .tab-content { display:none; }
+    .tab-content.active { display:block; }
+    .setup-steps { display:flex; flex-direction:column; gap:14px; }
+    .setup-step { display:flex; align-items:flex-start; gap:18px; padding:20px 24px; border-radius:var(--radius); }
+    .setup-step-num { width:36px; height:36px; min-width:36px; border-radius:50%; background:linear-gradient(135deg,var(--blue),var(--purple)); display:flex; align-items:center; justify-content:center; font-size:0.8rem; font-weight:800; font-family:var(--fh); box-shadow:0 0 14px rgba(59,130,246,0.35); }
+    .setup-step-info h4 { font-family:var(--fh); font-size:0.95rem; font-weight:700; margin-bottom:4px; }
+    .setup-step-info p { font-size:0.85rem; color:var(--muted); line-height:1.6; }
+    .os-badges { display:flex; gap:8px; flex-wrap:wrap; margin-top:20px; }
+    .ref-link { color:var(--blue-l); font-size:0.82rem; font-weight:600; margin-top:8px; display:inline-block; }
+
+    /* FEATURES */
+    .features-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:18px; margin-top:52px; }
+    .feature-card { padding:28px; border-radius:var(--radius); display:flex; align-items:flex-start; gap:20px; }
+    .feature-icon { width:48px; height:48px; min-width:48px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:1.4rem; }
+    .feature-icon.blue   { background:rgba(59,130,246,0.12); border:1px solid rgba(59,130,246,0.2); }
+    .feature-icon.purple { background:rgba(168,85,247,0.12); border:1px solid rgba(168,85,247,0.2); }
+    .feature-icon.cyan   { background:rgba(34,211,238,0.12); border:1px solid rgba(34,211,238,0.2); }
+    .feature-card h3 { font-family:var(--fh); font-size:1rem; font-weight:700; margin-bottom:6px; }
+    .feature-card p { font-size:0.875rem; color:var(--muted); line-height:1.6; }
+
+    /* FAQ */
+    .faq-list { max-width:760px; margin:48px auto 0; display:flex; flex-direction:column; gap:12px; }
+    .faq-item { border-radius:var(--radius); overflow:hidden; }
+    .faq-question { width:100%; background:var(--surface); border:1px solid var(--border); color:var(--white); font-family:var(--fb); font-size:0.95rem; font-weight:600; padding:20px 24px; display:flex; align-items:center; justify-content:space-between; cursor:pointer; text-align:left; transition:all var(--tr); gap:16px; }
+    .faq-question:hover { border-color:rgba(99,179,255,0.35); background:rgba(59,130,246,0.06); }
+    .faq-question.open { border-color:rgba(99,179,255,0.35); background:rgba(59,130,246,0.08); border-bottom-left-radius:0; border-bottom-right-radius:0; }
+    .faq-chevron { width:26px; height:26px; min-width:26px; border-radius:6px; background:rgba(59,130,246,0.12); border:1px solid rgba(59,130,246,0.30); display:flex; align-items:center; justify-content:center; flex-shrink:0; position:relative; transition:background .3s,border-color .3s; }
+    .faq-chevron::before { content:''; position:absolute; width:10px; height:2px; background:var(--blue-l); border-radius:2px; }
+    .faq-chevron::after  { content:''; position:absolute; width:2px; height:10px; background:var(--blue-l); border-radius:2px; transition:opacity .3s; }
+    .faq-question.open .faq-chevron { background:rgba(59,130,246,0.22); border-color:var(--blue-l); }
+    .faq-question.open .faq-chevron::before { background:var(--cyan); }
+    .faq-question.open .faq-chevron::after  { opacity:0; }
+    .faq-answer { max-height:0; overflow:hidden; transition:max-height .4s ease; background:rgba(59,130,246,0.04); border:1px solid rgba(99,179,255,0.35); border-top:none; border-bottom-left-radius:var(--radius); border-bottom-right-radius:var(--radius); }
+    .faq-answer.open { max-height:600px; }
+    .faq-answer-inner { padding:0 24px; transition:padding .3s; }
+    .faq-answer.open .faq-answer-inner { padding:20px 24px; }
+    .faq-answer p { font-size:0.9rem; color:var(--muted); line-height:1.7; }
+
+    /* CTA */
+    .cta-section { padding:100px 24px; }
+    .cta-inner { max-width:760px; margin:0 auto; text-align:center; padding:64px 48px; border-radius:24px; background:linear-gradient(135deg,rgba(59,130,246,0.08),rgba(168,85,247,0.08)); border:1px solid rgba(99,179,255,0.2); position:relative; overflow:hidden; }
+    .cta-glow-l { position:absolute; width:300px; height:300px; background:radial-gradient(circle,rgba(59,130,246,0.2),transparent 70%); border-radius:50%; top:-80px; left:-80px; pointer-events:none; }
+    .cta-glow-r { position:absolute; width:300px; height:300px; background:radial-gradient(circle,rgba(168,85,247,0.2),transparent 70%); border-radius:50%; bottom:-80px; right:-80px; pointer-events:none; }
+    .cta-inner h2 { font-family:var(--fh); font-size:clamp(1.8rem,4vw,2.6rem); font-weight:800; letter-spacing:-0.03em; margin-bottom:14px; position:relative; }
+    .cta-inner > p { font-size:1rem; color:var(--muted); margin-bottom:36px; position:relative; }
+    .cta-trust { margin-top:20px; font-size:0.8rem; color:var(--muted); text-align:center; }
+
+    /* LAST UPDATED */
+    .lu { text-align:center; padding:10px; font-size:0.76rem; color:rgba(136,152,187,0.6); letter-spacing:.04em; }
+
+    /* FOOTER */
+    footer { padding:40px 24px; border-top:1px solid var(--border); }
+    .footer-inner { max-width:1100px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px; }
+    .footer-logo { font-family:var(--fh); font-size:1rem; font-weight:800; color:var(--cyan); }
+    .footer-links { display:flex; gap:24px; flex-wrap:wrap; }
+    .footer-links a { font-size:0.8rem; color:var(--muted); transition:color var(--tr); }
+    .footer-links a:hover { color:var(--white); }
+    .footer-copy { font-size:0.75rem; color:var(--muted); width:100%; }
+    .footer-disc { font-size:0.75rem; color:rgba(136,152,187,0.6); border-top:1px solid var(--border); margin-top:24px; padding-top:20px; text-align:center; }
+
+    /* STICKY CTA */
+    .sticky-cta { display:none; position:fixed; bottom:0; left:0; right:0; z-index:200; padding:14px 20px; background:rgba(5,8,16,0.95); backdrop-filter:blur(20px); border-top:1px solid var(--border); }
+    .sticky-cta a { display:flex; align-items:center; justify-content:center; gap:10px; width:100%; padding:15px; background:linear-gradient(135deg,var(--blue),var(--purple)); border-radius:12px; font-weight:700; font-size:0.95rem; color:#fff; box-shadow:0 4px 24px rgba(59,130,246,0.4); }
+
+    /* RESPONSIVE */
+    @media (max-width:900px) {
+      nav { padding:16px 24px; }
+      .nav-links { display:none; }
+      .nav-hamburger { display:flex; }
+      .hero-inner { grid-template-columns:1fr; text-align:center; gap:36px; }
+      .hero-sub { margin:0 auto 36px; }
+      .hero-btns { justify-content:center; }
+      .hero-stats { justify-content:center; }
+      .hero-visual { order:-1; }
+
+      /* ── MOBILE ORB — fixed sizes with margin centering ── */
+      .network-orb { width:260px; height:260px; }
+      .orb-core { width:80px; height:80px; margin-top:-40px; margin-left:-40px; font-size:1.8rem; }
+      .ring1 { width:140px; height:140px; margin-top:-70px;  margin-left:-70px; }
+      .ring2 { width:200px; height:200px; margin-top:-100px; margin-left:-100px; }
+      .ring3 { width:254px; height:254px; margin-top:-127px; margin-left:-127px; }
+
+      .steps-flow { grid-template-columns:1fr; gap:16px; }
+      .step-arrow svg { transform:rotate(90deg); }
+      .sticky-cta { display:block; }
+      body { padding-bottom:80px; }
+      .cta-inner { padding:48px 28px; }
+    }
+    @media (max-width:600px) {
+      .section { padding:70px 16px; }
+      .setup-tabs { width:100%; flex-wrap:wrap; }
+      .tab-btn { flex:1; min-width:100px; justify-content:center; padding:10px 8px; font-size:0.8rem; }
+      .features-grid { grid-template-columns:1fr; }
+      .footer-inner { flex-direction:column; align-items:flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="content-wrap">
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">OptimAI <span>●</span> Network</div>
+  <div class="nav-links">
+    <a href="#what">About</a>
+    <a href="#how">How It Works</a>
+    <a href="#setup">Setup Guide</a>
+    <a href="#features">Features</a>
+    <a href="#faq">FAQ</a>
+    <a href="https://node.optimai.network/register?ref=40AC28ED" target="_blank" rel="noopener" class="nav-cta">Start Free →</a>
+  </div>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#what" onclick="closeMenu()">About</a>
+  <a href="#how" onclick="closeMenu()">How It Works</a>
+  <a href="#setup" onclick="closeMenu()">Setup Guide</a>
+  <a href="#features" onclick="closeMenu()">Features</a>
+  <a href="#faq" onclick="closeMenu()">FAQ</a>
+  <a href="https://node.optimai.network/register?ref=40AC28ED" target="_blank" rel="noopener" class="btn btn-primary" style="justify-content:center" onclick="closeMenu()">Create Free Account →</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="live-dot"></span> AI Compute Network · Live Now
+      </div>
+      <h1>How to Setup <span class="gradient-text">OptimAI Network</span> Node on Mobile, Telegram &amp; PC</h1>
+      <p class="hero-sub">Beginner-friendly guide to setting up OptimAI Node on Mobile, Telegram and Desktop. Run in the background — no technical skills needed.</p>
+      <div class="hero-btns">
+        <a href="https://node.optimai.network/register?ref=40AC28ED" target="_blank" rel="noopener" class="btn btn-primary">⚡ Start Free Setup</a>
+        <a href="#setup" class="btn btn-outline">📖 View Full Guide</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><label>SETUP TIME</label><strong>~5 min</strong></div>
+        <div class="hero-stat"><label>COST TO JOIN</label><strong>Free</strong></div>
+        <div class="hero-stat"><label>DEVICES</label><strong>Mobile + PC</strong></div>
+        <div class="hero-stat"><label>UPDATED</label><strong>May 2026</strong></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="network-orb">
+        <div class="orb-ring ring1"></div>
+        <div class="orb-ring ring2"></div>
+        <div class="orb-ring ring3"></div>
+        <div class="orb-dot"></div>
+        <div class="orb-dot"></div>
+        <div class="orb-dot"></div>
+        <div class="orb-core">🤖</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- WHAT IS -->
+<section class="section" id="what">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-tag"><span class="dot"></span> What Is OptimAI</div>
+      <h2 class="section-title">What Is OptimAI Network and <span class="gradient-text">How Does It Work?</span></h2>
+      <p class="section-sub">OptimAI Network lets anyone contribute idle device computing power to AI infrastructure. No mining rigs, no complex setup.</p>
+    </div>
+    <div class="what-grid">
+      <div class="what-card glass"><span class="what-icon">🧠</span><h3>AI Compute Network</h3><p>Your device contributes idle processing power to a distributed AI computing network that powers real applications.</p></div>
+      <div class="what-card glass"><span class="what-icon">⚙️</span><h3>Runs in Background</h3><p>The node operates silently in the background. Use your phone or computer normally while it runs.</p></div>
+      <div class="what-card glass"><span class="what-icon">🔋</span><h3>Uses Idle Power</h3><p>OptimAI only uses spare computing capacity — it doesn't slow down your device or drain your battery aggressively.</p></div>
+      <div class="what-card glass"><span class="what-icon">📱</span><h3>Mobile + Desktop</h3><p>Works on Android, iOS, Windows, macOS, and Linux. Any device you own can participate.</p></div>
+      <div class="what-card glass"><span class="what-icon">🚀</span><h3>Beginner Friendly</h3><p>No blockchain experience or coding knowledge required to get started.</p></div>
+      <div class="what-card glass"><span class="what-icon">✈️</span><h3>Telegram Lite Node</h3><p>No app download needed. Run a Lite Node directly inside Telegram using the OptimAI bot — same account, same rewards.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- HOW IT WORKS -->
+<section class="section" id="how">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-tag"><span class="dot"></span> How It Works</div>
+      <h2 class="section-title">How to Run OptimAI Node in <span class="gradient-text">3 Simple Steps</span></h2>
+      <p class="section-sub">Getting started takes less than 5 minutes. Follow these three steps and your node will be live.</p>
+    </div>
+    <div class="steps-flow" style="margin-top:52px">
+      <div class="step-card glass">
+        <div class="step-num">01</div>
+        <h3>Create Account</h3>
+        <p>Register your free account on OptimAI Network. Email verification only — no ID required.</p>
+        <a href="https://node.optimai.network/register?ref=40AC28ED" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:20px;font-size:0.85rem;padding:10px 20px">Register Now →</a>
+      </div>
+      <div class="step-arrow"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg></div>
+      <div class="step-card glass">
+        <div class="step-num">02</div>
+        <h3>Install Node App</h3>
+        <p>Download the OptimAI Edge Node app on Android, iOS, or desktop. Setup is automatic.</p>
+      </div>
+      <div class="step-arrow"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg></div>
+      <div class="step-card glass">
+        <div class="step-num">03</div>
+        <h3>Start Running</h3>
+        <p>Login and tap "Start Node". Your device is now part of the OptimAI compute network.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SETUP GUIDE -->
+<section class="section" id="setup">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag"><span class="dot"></span> Step-by-Step Guides</div>
+      <h2 class="section-title">OptimAI Network <span class="gradient-text">Step-by-Step Setup Guide</span></h2>
+      <p class="section-sub">Choose your platform — Mobile App, Telegram Lite Node, or Desktop PC — and follow the exact steps.</p>
+    </div>
+
+    <div class="setup-tabs reveal" style="margin-top:36px">
+      <button class="tab-btn active" onclick="switchTab('mobile',this)">📱 Mobile App</button>
+      <button class="tab-btn" onclick="switchTab('desktop',this)">💻 Desktop PC</button>
+      <button class="tab-btn" onclick="switchTab('telegram',this)">✈️ Telegram Bot</button>
+    </div>
+
+    <!-- MOBILE -->
+    <div class="tab-content active" id="tab-mobile">
+      <div class="os-badges"><span class="badge badge-green">✅ Android</span><span class="badge badge-blue">✅ iOS</span></div>
+      <div class="setup-steps" style="margin-top:20px">
+        <div class="setup-step glass">
+          <div class="setup-step-num">1</div>
+          <div class="setup-step-info">
+            <h4>Create Your Free Account</h4>
+            <p>Visit the registration page and sign up. Enter your email and create a password. Completely free.</p>
+            <a href="https://node.optimai.network/register?ref=40AC28ED" target="_blank" rel="noopener" class="ref-link">→ Register at OptimAI Network (Free)</a>
+          </div>
+        </div>
+        <div class="setup-step glass"><div class="setup-step-num">2</div><div class="setup-step-info"><h4>Verify Your Email</h4><p>Check your inbox for a verification email from OptimAI. Click the verification link to activate your account. Check spam if not received within 2 minutes.</p></div></div>
+        <div class="setup-step glass">
+          <div class="setup-step-num">3</div>
+          <div class="setup-step-info">
+            <h4>Download OptimAI Edge Node App</h4>
+            <p>Search for <strong>"OptimAI Edge Node"</strong> on the Google Play Store (Android) or Apple App Store (iOS) and install the official app.</p>
+            <div style="display:flex;gap:10px;margin-top:10px;flex-wrap:wrap">
+              <a href="https://play.google.com/store/search?q=optimai+edge+node" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;padding:7px 14px;background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.25);border-radius:8px;font-size:0.78rem;font-weight:600;color:#4ade80">▶ Google Play</a>
+              <a href="https://apps.apple.com/search?term=optimai+edge+node" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;padding:7px 14px;background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.25);border-radius:8px;font-size:0.78rem;font-weight:600;color:var(--blue-l)">🍎 App Store</a>
+            </div>
+          </div>
+        </div>
+        <div class="setup-step glass"><div class="setup-step-num">4</div><div class="setup-step-info"><h4>Login to the App</h4><p>Open the installed app and log in using the email and password you created during registration.</p></div></div>
+        <div class="setup-step glass"><div class="setup-step-num">5</div><div class="setup-step-info"><h4>Tap "Start Node"</h4><p>Locate the <strong>Start Node</strong> button on your dashboard and tap it to begin contributing to the network.</p></div></div>
+        <div class="setup-step glass"><div class="setup-step-num">6</div><div class="setup-step-info"><h4>Enable Background Running</h4><p>Android: Battery settings → Unrestricted. iOS: Background App Refresh → On. This keeps your node running while using other apps.</p></div></div>
+      </div>
+    </div>
+
+    <!-- DESKTOP -->
+    <div class="tab-content" id="tab-desktop">
+      <div class="os-badges"><span class="badge badge-blue">✅ Windows</span><span class="badge badge-green">✅ macOS</span><span class="badge badge-purple">✅ Linux</span></div>
+      <div class="setup-steps" style="margin-top:20px">
+        <div class="setup-step glass">
+          <div class="setup-step-num">1</div>
+          <div class="setup-step-info">
+            <h4>Create Your Free Account</h4>
+            <p>Head to the OptimAI registration page and sign up for free. No technical experience required.</p>
+            <a href="https://node.optimai.network/register?ref=40AC28ED" target="_blank" rel="noopener" class="ref-link">→ Register at OptimAI Network (Free)</a>
+          </div>
+        </div>
+        <div class="setup-step glass"><div class="setup-step-num">2</div><div class="setup-step-info"><h4>Download OptimAI Node Software</h4><p>Log into your account dashboard and download the installer for your OS: Windows .exe, macOS .dmg, or Linux package.</p></div></div>
+        <div class="setup-step glass"><div class="setup-step-num">3</div><div class="setup-step-info"><h4>Install the Software</h4><p>Run the installer and follow the on-screen steps. Quick installation — typically under 2 minutes. Admin permission may be required.</p></div></div>
+        <div class="setup-step glass"><div class="setup-step-num">4</div><div class="setup-step-info"><h4>Login to the Node App</h4><p>Open the OptimAI Node desktop app and log in with your registered email and password.</p></div></div>
+        <div class="setup-step glass"><div class="setup-step-num">5</div><div class="setup-step-info"><h4>Start Your Node</h4><p>Click the <strong>"Start Node"</strong> button in the app dashboard. Your system will begin contributing to the OptimAI network immediately.</p></div></div>
+        <div class="setup-step glass"><div class="setup-step-num">6</div><div class="setup-step-info"><h4>Keep the App Running</h4><p>Minimize to system tray. Enable <strong>"Start on Boot"</strong> in app settings so it starts automatically every time.</p></div></div>
+      </div>
+    </div>
+
+    <!-- TELEGRAM -->
+    <div class="tab-content" id="tab-telegram">
+      <div class="os-badges"><span class="badge badge-purple">✅ Telegram</span><span class="badge badge-green">✅ No App Download</span><span class="badge badge-blue">✅ Same Account Sync</span></div>
+      <div class="glass reveal" style="padding:18px 22px;margin-top:20px;margin-bottom:8px;border-color:rgba(168,85,247,0.3);background:rgba(168,85,247,0.06);display:flex;align-items:flex-start;gap:14px">
+        <span style="font-size:1.4rem">💡</span>
+        <div>
+          <strong style="font-size:0.9rem;color:var(--purple-l)">OptimAI Lite Node — Telegram Version</strong>
+          <p style="font-size:0.83rem;color:var(--muted);margin-top:4px;line-height:1.6">This is the <strong style="color:var(--white)">easiest way</strong> to run a node — no app install needed. Just open Telegram and start the bot. Rewards sync with the same account across Mobile App + Telegram + Desktop.</p>
+        </div>
+      </div>
+      <div class="setup-steps" style="margin-top:14px">
+        <div class="setup-step glass">
+          <div class="setup-step-num">1</div>
+          <div class="setup-step-info">
+            <h4>Create Your Free Account First</h4>
+            <p>If you haven't registered yet, sign up for a free OptimAI Network account. You'll use this same account to login on Telegram.</p>
+            <a href="https://node.optimai.network/register?ref=40AC28ED" target="_blank" rel="noopener" class="ref-link">→ Register at OptimAI Network (Free)</a>
+          </div>
+        </div>
+        <div class="setup-step glass"><div class="setup-step-num">2</div><div class="setup-step-info"><h4>Open Telegram &amp; Search the Bot</h4><p>Open your Telegram app and search for <strong style="color:var(--purple-l)">"OptimAI Lite Node"</strong> or find it via the official channel <strong style="color:var(--white)">@OptimAINetwork</strong>.</p></div></div>
+        <div class="setup-step glass"><div class="setup-step-num">3</div><div class="setup-step-info"><h4>Send /start to the Bot</h4><p>Open the bot and tap <strong style="color:var(--white)">START</strong> or type <strong style="color:var(--cyan)">/start</strong>. The bot will load the OptimAI Lite Node interface inside Telegram.</p></div></div>
+        <div class="setup-step glass"><div class="setup-step-num">4</div><div class="setup-step-info"><h4>Login With Your Account</h4><p>Inside the Telegram mini app, log in using the same email and password from your OptimAI Network account. Rewards sync automatically.</p></div></div>
+        <div class="setup-step glass"><div class="setup-step-num">5</div><div class="setup-step-info"><h4>Tap "Start OptimAI Node"</h4><p>Tap the <strong style="color:var(--white)">"Start OptimAI Node"</strong> button. Your Lite Node will begin running immediately inside Telegram — no separate app needed.</p></div></div>
+        <div class="setup-step glass"><div class="setup-step-num">6</div><div class="setup-step-info"><h4>Check Your Dashboard</h4><p>Tap <strong style="color:var(--white)">"Go to Dashboard"</strong> to see your Node Uptime, Total Rewards, and 24h Rewards. Combined across all devices.</p></div></div>
+      </div>
+      <div class="glass reveal" style="padding:22px 24px;margin-top:20px;border-color:rgba(34,211,238,0.25);background:rgba(34,211,238,0.04)">
+        <div style="font-size:0.85rem;font-weight:700;color:var(--cyan);margin-bottom:14px;letter-spacing:0.05em">⚡ RUN ALL THREE AT ONCE — SAME ACCOUNT</div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <div style="flex:1;min-width:140px;padding:14px 16px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:10px;text-align:center"><div style="font-size:1.5rem;margin-bottom:6px">📱</div><div style="font-size:0.8rem;font-weight:700">Mobile App</div><div style="font-size:0.75rem;color:var(--muted);margin-top:3px">Edge Node</div></div>
+          <div style="flex:1;min-width:140px;padding:14px 16px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:10px;text-align:center"><div style="font-size:1.5rem;margin-bottom:6px">✈️</div><div style="font-size:0.8rem;font-weight:700">Telegram Bot</div><div style="font-size:0.75rem;color:var(--muted);margin-top:3px">Lite Node</div></div>
+          <div style="flex:1;min-width:140px;padding:14px 16px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:10px;text-align:center"><div style="font-size:1.5rem;margin-bottom:6px">💻</div><div style="font-size:0.8rem;font-weight:700">Desktop PC</div><div style="font-size:0.75rem;color:var(--muted);margin-top:3px">Full Node</div></div>
+        </div>
+        <p style="font-size:0.8rem;color:var(--muted);margin-top:14px;text-align:center">All three platforms use the same account. Rewards accumulate together on your dashboard.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- FEATURES -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-tag"><span class="dot"></span> Features</div>
+      <h2 class="section-title">Everything You <span class="gradient-text">Need to Know</span></h2>
+      <p class="section-sub">OptimAI Network is built with simplicity in mind — anyone can set it up and run it without any prior experience.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card glass"><div class="feature-icon blue">🎯</div><div><h3>Beginner Friendly Setup</h3><p>No technical knowledge required. The entire setup takes under 5 minutes with clear step-by-step instructions for any device.</p></div></div>
+      <div class="feature-card glass"><div class="feature-icon purple">📱</div><div><h3>Mobile + Desktop Support</h3><p>Run the node on Android, iOS, Windows, macOS, or Linux. Use whichever device is most convenient for you.</p></div></div>
+      <div class="feature-card glass"><div class="feature-icon cyan">⚙️</div><div><h3>Background Running</h3><p>The node runs silently in the background. Use your device normally — the software handles everything automatically.</p></div></div>
+      <div class="feature-card glass"><div class="feature-icon blue">📊</div><div><h3>Easy Dashboard Tracking</h3><p>Monitor your node status and activity through a clean, easy-to-read dashboard available in the app and web portal.</p></div></div>
+      <div class="feature-card glass"><div class="feature-icon purple">🔄</div><div><h3>Passive Node Operation</h3><p>Set it up once and it keeps running. No daily management needed — the system is designed to operate passively.</p></div></div>
+      <div class="feature-card glass"><div class="feature-icon cyan">⚡</div><div><h3>Lightweight Performance</h3><p>Optimized to use only idle resources so your device stays fast and responsive for your everyday activities.</p></div></div>
+      <div class="feature-card glass"><div class="feature-icon purple">✈️</div><div><h3>Telegram Lite Node</h3><p>Run a node directly inside Telegram — no separate app needed. Same account syncs rewards across Mobile, Telegram, and Desktop automatically.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-tag"><span class="dot"></span> FAQ</div>
+      <h2 class="section-title">Common <span class="gradient-text">Questions</span></h2>
+      <p class="section-sub">Answers to the most common questions people ask before getting started with OptimAI Network.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">Is OptimAI Network free to join?<span class="faq-chevron"></span></button><div class="faq-answer"><div class="faq-answer-inner"><p>Yes — joining OptimAI Network is completely free. There are no upfront costs, subscription fees, or payment required to create your account and start running a node. Simply register with your email and you're ready to go.</p></div></div></div>
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">Can I use mobile only without a PC?<span class="faq-chevron"></span></button><div class="faq-answer"><div class="faq-answer-inner"><p>Absolutely. OptimAI Network has a dedicated mobile app for both Android and iOS. You can run your node entirely from your smartphone — no desktop or laptop required.</p></div></div></div>
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">Can I run OptimAI node on Telegram?<span class="faq-chevron"></span></button><div class="faq-answer"><div class="faq-answer-inner"><p>Yes. OptimAI Lite Node runs directly inside Telegram via a bot. No separate app needed. Same account syncs rewards across Mobile, Telegram, and Desktop automatically.</p></div></div></div>
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">Do I need a powerful PC or gaming computer?<span class="faq-chevron"></span></button><div class="faq-answer"><div class="faq-answer-inner"><p>No. OptimAI Node is designed to run on ordinary hardware — including older computers and budget smartphones. The software is lightweight and only uses your device's idle processing capacity.</p></div></div></div>
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">How long does the OptimAI setup take?<span class="faq-chevron"></span></button><div class="faq-answer"><div class="faq-answer-inner"><p>The complete setup process takes approximately 3 to 5 minutes for most users. This includes creating your account, verifying your email, installing the app, and starting your node for the first time.</p></div></div></div>
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">Is OptimAI Network safe to use?<span class="faq-chevron"></span></button><div class="faq-answer"><div class="faq-answer-inner"><p>OptimAI uses only your device's idle computing resources. It does not access your personal files or sensitive data. Always download the app from official sources — Google Play Store or Apple App Store only. As with any emerging platform, do your own research before participating.</p></div></div></div>
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">Will running a node drain my battery or slow my device?<span class="faq-chevron"></span></button><div class="faq-answer"><div class="faq-answer-inner"><p>OptimAI Node is optimized to be lightweight and runs only on your device's idle resources. While some battery usage is expected on mobile, the software is designed to minimize impact. You can adjust performance settings within the app.</p></div></div></div>
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">Can I run OptimAI on multiple devices at once?<span class="faq-chevron"></span></button><div class="faq-answer"><div class="faq-answer-inner"><p>Yes. You can run OptimAI Node on your Mobile App, Telegram Lite Node, and Desktop PC simultaneously using the same account. All rewards accumulate together in your single dashboard.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- TRUST -->
+<section class="section" id="trust">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-tag"><span class="dot"></span> Why People Use OptimAI</div>
+      <h2 class="section-title">Built for <span class="gradient-text">Everyday Users</span></h2>
+      <p class="section-sub">OptimAI Network is designed to work for anyone — from first-time users to tech-savvy individuals.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:48px">
+      <div class="glass" style="padding:28px 24px;text-align:center;border-radius:var(--radius)"><div style="font-size:2rem;margin-bottom:12px">🆓</div><h3 style="font-family:var(--fh);font-size:1rem;font-weight:700;margin-bottom:8px">Free to Start</h3><p style="font-size:0.85rem;color:var(--muted);line-height:1.6">Zero cost to create an account and run a node. No hidden fees or subscriptions.</p></div>
+      <div class="glass" style="padding:28px 24px;text-align:center;border-radius:var(--radius)"><div style="font-size:2rem;margin-bottom:12px">📱</div><h3 style="font-family:var(--fh);font-size:1rem;font-weight:700;margin-bottom:8px">Works on Any Device</h3><p style="font-size:0.85rem;color:var(--muted);line-height:1.6">Old phones, budget laptops, or Telegram — any device can participate.</p></div>
+      <div class="glass" style="padding:28px 24px;text-align:center;border-radius:var(--radius)"><div style="font-size:2rem;margin-bottom:12px">⏱️</div><h3 style="font-family:var(--fh);font-size:1rem;font-weight:700;margin-bottom:8px">5 Minute Setup</h3><p style="font-size:0.85rem;color:var(--muted);line-height:1.6">From account creation to node running — the entire process takes under 5 minutes.</p></div>
+      <div class="glass" style="padding:28px 24px;text-align:center;border-radius:var(--radius)"><div style="font-size:2rem;margin-bottom:12px">🔄</div><h3 style="font-family:var(--fh);font-size:1rem;font-weight:700;margin-bottom:8px">Runs Automatically</h3><p style="font-size:0.85rem;color:var(--muted);line-height:1.6">Set it up once. The node runs passively with no daily management needed.</p></div>
+      <div class="glass" style="padding:28px 24px;text-align:center;border-radius:var(--radius)"><div style="font-size:2rem;margin-bottom:12px">🌐</div><h3 style="font-family:var(--fh);font-size:1rem;font-weight:700;margin-bottom:8px">3 Platform Support</h3><p style="font-size:0.85rem;color:var(--muted);line-height:1.6">Mobile app, Telegram Lite Node, and Desktop — one account works across all three simultaneously.</p></div>
+      <div class="glass" style="padding:28px 24px;text-align:center;border-radius:var(--radius)"><div style="font-size:2rem;margin-bottom:12px">📊</div><h3 style="font-family:var(--fh);font-size:1rem;font-weight:700;margin-bottom:8px">Live Dashboard</h3><p style="font-size:0.85rem;color:var(--muted);line-height:1.6">Track your node uptime, total rewards, and 24h earnings in real time from the app dashboard.</p></div>
+    </div>
+    <div style="text-align:center;margin-top:36px">
+      <a href="https://node.optimai.network/register?ref=40AC28ED" target="_blank" rel="noopener" class="btn btn-primary">🚀 Join OptimAI Network — It's Free</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- TROUBLESHOOT -->
+<section class="section" id="troubleshoot">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag"><span class="dot"></span> Troubleshooting</div>
+      <h2 class="section-title">Common Problems <span class="gradient-text">&amp; Fixes</span></h2>
+      <p class="section-sub">Running into an issue? Here are the most common problems and how to solve them quickly.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:14px;margin-top:48px;max-width:800px">
+      <div class="glass" style="padding:24px;border-radius:var(--radius)"><h3 style="font-family:var(--fh);font-size:0.95rem;font-weight:700;margin-bottom:8px;color:var(--cyan)">🔋 Battery draining too fast on mobile?</h3><p style="font-size:0.875rem;color:var(--muted);line-height:1.7">Go to <strong style="color:var(--white)">Battery Settings → App Battery Usage → OptimAI Edge Node → Set to Restricted or Optimized</strong>. This limits background activity while keeping the node connected.</p></div>
+      <div class="glass" style="padding:24px;border-radius:var(--radius)"><h3 style="font-family:var(--fh);font-size:0.95rem;font-weight:700;margin-bottom:8px;color:var(--cyan)">📶 How much internet data does OptimAI use?</h3><p style="font-size:0.875rem;color:var(--muted);line-height:1.7">OptimAI Node uses <strong style="color:var(--white)">minimal data</strong> — typically a few MB per day. It primarily uses idle processing power, not heavy bandwidth. WiFi is recommended.</p></div>
+      <div class="glass" style="padding:24px;border-radius:var(--radius)"><h3 style="font-family:var(--fh);font-size:0.95rem;font-weight:700;margin-bottom:8px;color:var(--cyan)">🛑 Node keeps stopping on Android?</h3><p style="font-size:0.875rem;color:var(--muted);line-height:1.7">Go to <strong style="color:var(--white)">Settings → Apps → OptimAI → Battery → Allow background activity</strong>. Also disable battery optimization for the app.</p></div>
+      <div class="glass" style="padding:24px;border-radius:var(--radius)"><h3 style="font-family:var(--fh);font-size:0.95rem;font-weight:700;margin-bottom:8px;color:var(--cyan)">💻 Can I run multiple devices on one account?</h3><p style="font-size:0.875rem;color:var(--muted);line-height:1.7">Yes. You can run OptimAI Node on your <strong style="color:var(--white)">Mobile App, Telegram Lite Node, and Desktop PC</strong> simultaneously. All rewards accumulate together in your dashboard.</p></div>
+      <div class="glass" style="padding:24px;border-radius:var(--radius)"><h3 style="font-family:var(--fh);font-size:0.95rem;font-weight:700;margin-bottom:8px;color:var(--cyan)">🔒 Is OptimAI Network safe to use?</h3><p style="font-size:0.875rem;color:var(--muted);line-height:1.7">OptimAI uses only your device's <strong style="color:var(--white)">idle computing resources</strong>. It does not access personal files or sensitive data. Always download from Google Play Store or Apple App Store only.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CTA -->
+<section class="cta-section" id="join">
+  <div class="container">
+    <div class="cta-inner reveal">
+      <div class="cta-glow-l"></div>
+      <div class="cta-glow-r"></div>
+      <div class="section-tag" style="margin-bottom:20px">⚡ Get Started Today — Free</div>
+      <h2>Start Your <span class="gradient-text">OptimAI Node</span> in Minutes</h2>
+      <p>Join OptimAI Network for free. Follow this beginner setup guide and have your node running on mobile, Telegram or desktop in under 5 minutes.</p>
+      <a href="https://node.optimai.network/register?ref=40AC28ED" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:1.05rem;padding:16px 36px">🚀 Create Free Account — Start Now</a>
+      <div class="cta-trust">No cost to join · Beginner friendly · Mobile, Telegram &amp; Desktop · Updated May 2026</div>
+    </div>
+  </div>
+</section>
+
+<div class="lu">📅 Last Updated: May 2026 — This guide is regularly reviewed and kept current.</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">OptimAI ● Network</div>
+    <div class="footer-links">
+      <a href="#what">About</a>
+      <a href="#how">How It Works</a>
+      <a href="#setup">Setup Guide</a>
+      <a href="#features">Features</a>
+      <a href="#faq">FAQ</a>
+      <a href="#trust">Why Join</a>
+      <a href="https://node.optimai.network/register?ref=40AC28ED" target="_blank" rel="noopener">Register Free</a>
+    </div>
+    <div class="footer-copy">© 2026 OptimAI Network Setup Guide · Updated May 2026</div>
+    <div class="footer-disc">⚠️ Disclaimer: This is an independent beginner guide page created to help users get started with OptimAI Network. This page is not an official OptimAI product. Always do your own research before participating in any digital asset or compute-sharing network. This page contains a referral link.</div>
+  </div>
+</footer>
+
+</div><!-- /content-wrap -->
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <a href="https://node.optimai.network/register?ref=40AC28ED" target="_blank" rel="noopener">⚡ Create Free Account — Start Now</a>
+</div>
+
+<script>
+  /* NAV scroll */
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').style.background = window.scrollY > 60 ? 'rgba(5,8,16,0.96)' : 'rgba(5,8,16,0.80)';
+  }, {passive:true});
+
+  /* Hamburger */
+  const hbg = document.getElementById('hamburger');
+  const mmenu = document.getElementById('mobileMenu');
+  let mo = false;
+  hbg.addEventListener('click', () => {
+    mo = !mo;
+    if (mo) {
+      mmenu.classList.add('open');
+      hbg.children[0].style.transform = 'rotate(45deg) translate(5px,5px)';
+      hbg.children[1].style.opacity = '0';
+      hbg.children[2].style.transform = 'rotate(-45deg) translate(5px,-5px)';
+    } else { closeMenu(); }
+  });
+  function closeMenu() {
+    mo = false; mmenu.classList.remove('open');
+    hbg.children[0].style.transform = '';
+    hbg.children[1].style.opacity = '';
+    hbg.children[2].style.transform = '';
+  }
+
+  /* Tabs */
+  function switchTab(tab, btn) {
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('tab-' + tab).classList.add('active');
+    btn.classList.add('active');
+  }
+
+  /* FAQ */
+  function toggleFaq(btn) {
+    const ans = btn.nextElementSibling;
+    const isOpen = ans.classList.contains('open');
+    document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+    document.querySelectorAll('.faq-question').forEach(b => { b.classList.remove('open'); b.setAttribute('aria-expanded','false'); });
+    if (!isOpen) {
+      ans.classList.add('open');
+      btn.classList.add('open');
+      btn.setAttribute('aria-expanded','true');
+    }
+  }
+
+  /* Sticky CTA */
+  const sc = document.getElementById('stickyCta');
+  window.addEventListener('scroll', () => {
+    const f = document.querySelector('footer');
+    if (!f || !sc) return;
+    sc.style.display = f.getBoundingClientRect().top < window.innerHeight + 80 ? 'none' : 'block';
+  }, {passive:true});
+</script>
+
+</body>
+</html>
