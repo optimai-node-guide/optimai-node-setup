@@ -90,7 +90,7 @@
     .text-center .section-sub { margin: 0 auto; }
     .glass { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); backdrop-filter: blur(12px); transition: border-color var(--tr), box-shadow var(--tr), transform var(--tr); }
     .glass:hover { border-color: rgba(99,179,255,0.35); box-shadow: var(--glow-b); transform: translateY(-4px); }
-    .btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 30px; border-radius: 10px; font-family: var(--fb); font-size: 1rem; font-weight: 600; cursor: pointer; border: none; transition: all var(--tr); text-align: center; white-space: nowrap; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 28px; border-radius: 10px; font-family: var(--fb); font-size: 1rem; font-weight: 600; cursor: pointer; border: none; transition: all var(--tr); text-align: center; white-space: normal; word-break: keep-all; max-width: 100%; }
     .btn-primary { background: linear-gradient(135deg, var(--blue), var(--purple)); color: #fff; box-shadow: 0 4px 24px rgba(59,130,246,0.3); }
     .btn-primary:hover { box-shadow: 0 6px 40px rgba(59,130,246,0.55); transform: translateY(-2px); }
     .btn-outline { background: transparent; color: var(--white); border: 1px solid var(--border); }
@@ -113,7 +113,8 @@
     @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
     .hero h1 { font-family: var(--fh); font-size: clamp(2.4rem,6vw,4rem); font-weight: 800; line-height: 1.1; letter-spacing: -0.04em; margin-bottom: 20px; animation: fadeUp .6s ease .2s both; }
     .hero-sub { font-size: 1.1rem; color: var(--muted); line-height: 1.75; margin-bottom: 36px; max-width: 460px; animation: fadeUp .6s ease .3s both; }
-    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 40px; animation: fadeUp .6s ease .4s both; }
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 40px; animation: fadeUp .6s ease .4s both; width: 100%; }
+    .hero-btns .btn { flex: 1; min-width: 140px; justify-content: center; }
     .hero-stats { display: flex; gap: 32px; flex-wrap: wrap; animation: fadeUp .6s ease .5s both; }
     .hero-stat label { font-size: 0.75rem; color: var(--muted); display: block; margin-bottom: 2px; letter-spacing: 0.05em; }
     .hero-stat strong { font-family: var(--fh); font-size: 1.5rem; font-weight: 700; }
@@ -234,6 +235,7 @@
     .cta-inner h2 { font-family:var(--fh); font-size:clamp(1.8rem,4vw,2.6rem); font-weight:800; letter-spacing:-0.03em; margin-bottom:14px; position:relative; }
     .cta-inner > p { font-size:1rem; color:var(--muted); margin-bottom:36px; position:relative; }
     .cta-trust { margin-top:20px; font-size:0.8rem; color:var(--muted); text-align:center; }
+    .cta-btn-wrap { display:flex; justify-content:center; position:relative; padding: 0 16px; }
 
     /* LAST UPDATED */
     .lu { text-align:center; padding:10px; font-size:0.76rem; color:rgba(136,152,187,0.6); letter-spacing:.04em; }
@@ -249,8 +251,8 @@
     .footer-disc { font-size:0.75rem; color:rgba(136,152,187,0.6); border-top:1px solid var(--border); margin-top:24px; padding-top:20px; text-align:center; }
 
     /* STICKY CTA */
-    .sticky-cta { display:none; position:fixed; bottom:0; left:0; right:0; z-index:200; padding:14px 20px; background:rgba(5,8,16,0.95); backdrop-filter:blur(20px); border-top:1px solid var(--border); }
-    .sticky-cta a { display:flex; align-items:center; justify-content:center; gap:10px; width:100%; padding:15px; background:linear-gradient(135deg,var(--blue),var(--purple)); border-radius:12px; font-weight:700; font-size:0.95rem; color:#fff; box-shadow:0 4px 24px rgba(59,130,246,0.4); }
+    .sticky-cta { display:none; position:fixed; bottom:0; left:0; right:0; z-index:200; padding:12px 16px; background:rgba(5,8,16,0.95); backdrop-filter:blur(20px); border-top:1px solid var(--border); }
+    .sticky-cta a { display:flex; align-items:center; justify-content:center; gap:8px; width:100%; padding:14px 16px; background:linear-gradient(135deg,var(--blue),var(--purple)); border-radius:12px; font-weight:700; font-size:0.9rem; color:#fff; box-shadow:0 4px 24px rgba(59,130,246,0.4); text-align:center; }
 
     /* RESPONSIVE */
     @media (max-width:900px) {
@@ -274,7 +276,9 @@
       .step-arrow svg { transform:rotate(90deg); }
       .sticky-cta { display:block; }
       body { padding-bottom:80px; }
-      .cta-inner { padding:48px 28px; }
+      .cta-inner { padding:40px 20px; }
+      .cta-inner h2 { font-size: clamp(1.5rem, 5vw, 2rem); }
+      .cta-btn-wrap { padding: 0 8px; }
     }
     @media (max-width:600px) {
       .section { padding:70px 16px; }
@@ -439,7 +443,7 @@
             <h4>Download OptimAI Edge Node App</h4>
             <p>Search for <strong>"OptimAI Edge Node"</strong> on the Google Play Store (Android) or Apple App Store (iOS) and install the official app.</p>
             <div style="display:flex;gap:10px;margin-top:10px;flex-wrap:wrap">
-              <a href="https://play.google.com/store/search?q=optimai+edge+node" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;padding:7px 14px;background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.25);border-radius:8px;font-size:0.78rem;font-weight:600;color:#4ade80">▶ Google Play</a>
+              <a href="https://node.optimai.network/register?ref=40AC28ED" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;padding:7px 14px;background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.25);border-radius:8px;font-size:0.78rem;font-weight:600;color:#4ade80">▶ Google Play</a>
               <a href="https://node.optimai.network/register?ref=40AC28ED" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;padding:7px 14px;background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.25);border-radius:8px;font-size:0.78rem;font-weight:600;color:var(--blue-l)">🍎 App Store</a>
             </div>
           </div>
@@ -608,7 +612,9 @@
       <div class="section-tag" style="margin-bottom:20px">⚡ Get Started Today — Free</div>
       <h2>Start Your <span class="gradient-text">OptimAI Node</span> in Minutes</h2>
       <p>Join OptimAI Network for free. Follow this beginner setup guide and have your node running on mobile, Telegram or desktop in under 5 minutes.</p>
-      <a href="https://node.optimai.network/register?ref=40AC28ED" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:1.05rem;padding:16px 36px">🚀 Create Free Account — Start Now</a>
+      <div class="cta-btn-wrap">
+        <a href="https://node.optimai.network/register?ref=40AC28ED" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:1.05rem;padding:16px 32px;width:100%;max-width:420px">🚀 Create Free Account — Start Now</a>
+      </div>
       <div class="cta-trust">No cost to join · Beginner friendly · Mobile, Telegram &amp; Desktop · Updated May 2026</div>
     </div>
   </div>
